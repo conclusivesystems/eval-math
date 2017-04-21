@@ -394,7 +394,7 @@ class EvalMath {
                     for ($i = $count-1; $i >= 0; $i--) {
                         if (is_null($args[] = $stack->pop())) return $this->trigger(get_string('internalerror', 'mathslib'));
                     }
-                    $res = call_user_func_array(array('EvalMathFuncs', $fnn), array_reverse($args));
+                    $res = call_user_func_array(array('Consys\EvalMath\EvalMathFuncs', $fnn), array_reverse($args));
                     if ($res === FALSE) {
                         return $this->trigger(get_string('internalerror', 'mathslib'));
                     }

@@ -1,4 +1,5 @@
 <?php
+namespace Consys\EvalMath;
 
 // spreadsheet functions emulation
 class EvalMathFuncs {
